@@ -23,6 +23,7 @@ void LCD_STR(Byte*);
 void LCD_pos(Byte, Byte);
 void LCD_Clear(void);
 void Init_LCD(void);				// LCD 초기화 함수
+void LCD_Init(void);
 
 #endif
 
@@ -99,4 +100,5 @@ void LCD_Init(void) //LCD 초기화
 	LCD_Comm(0x06); //주소 +1, 커서를 우측으로 이동 (3)
 	_delay_ms(2);
 	LCD_Clear();
+
 }
