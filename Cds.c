@@ -34,7 +34,7 @@ int main(void)
 	Byte str1[] = "Atmega_128";
 	char str2[16];
 	
-	PortInit();
+	Port_Init();
 	LCD_Init();
 
 	LCD_pos(0,0);
@@ -50,4 +50,5 @@ int main(void)
 		LCD_STR(str2);
 		_delay_ms(500);
 	}
+
 }
