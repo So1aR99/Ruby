@@ -34,7 +34,7 @@ LCD .c파일
 #include <util/delay.h>
 #include "lcd.h"
 
-void PortInit(void)
+void Port_Init(void)
 {
 	DDRC = 0xFF;		// 출력
 	DDRB = 0x0F;
@@ -102,3 +102,4 @@ void LCD_Init(void) //LCD 초기화
 	LCD_Clear();
 
 }
+
